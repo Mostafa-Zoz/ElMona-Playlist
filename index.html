@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+    <head>
+        
+         <title>ElMona Website</title>
+            <link rel="icon" type="image/png" href="sign.png">
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="stylee.css" type="text/css">
+  
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+            <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+            
+    <style>
+     @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+   
+        width: 100%;
+        margin: 0;
+        padding: 0;
+  background: url('images/background.png');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+}
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all .5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+
+ h1{
+        
+       }
+       .hr {
+        margin-top: 700px;
+        margin-right: 100px;
+        transform: rotate(-10deg) skew(20deg);
+       }
+        .hr a {
+         
+        color: #FFF;
+        font-size: 45px;
+        margin-left: 280px;
+        margin-bottom: 80px;
+        text-decoration: none;
+        
+        }
+        .hr a:hover {
+           box-shadow: 0 0 10px #2c3e50, 0 0 40px #2c3e50 , 0 0 80px #2c3e50;
+        }
+        .zoz img {
+         justify-content: center;
+         margin-left: 350px;
+         align-items: center;
+         
+        }
+        .come h2 {
+          margin-top: 80px;
+          text-align: center;
+         letter-spacing: 30px;
+         font-family: cursive;
+         
+        }
+       
+         #fountainTextG{
+	width:150px;
+	margin:auto;
+}
+
+.fountainTextG{
+	color:rgb(224, 215, 215);
+	font-family:Arial;
+	font-size:35px;
+
+	text-decoration:none;
+	font-weight:normal;
+	font-style:normal;
+	float:left;
+	animation-name:bounce_fountainTextG;
+		-o-animation-name:bounce_fountainTextG;
+		-ms-animation-name:bounce_fountainTextG;
+		-webkit-animation-name:bounce_fountainTextG;
+		-moz-animation-name:bounce_fountainTextG;
+	animation-duration:2.09s;
+		-o-animation-duration:2.09s;
+		-ms-animation-duration:2.09s;
+		-webkit-animation-duration:2.09s;
+		-moz-animation-duration:2.09s;
+	animation-iteration-count:infinite;
+		-o-animation-iteration-count:infinite;
+		-ms-animation-iteration-count:infinite;
+		-webkit-animation-iteration-count:infinite;
+		-moz-animation-iteration-count:infinite;
+	animation-direction:normal;
+		-o-animation-direction:normal;
+		-ms-animation-direction:normal;
+		-webkit-animation-direction:normal;
+		-moz-animation-direction:normal;
+	transform:scale(.5);
+		-o-transform:scale(.5);
+		-ms-transform:scale(.5);
+		-webkit-transform:scale(.5);
+		-moz-transform:scale(.5);
+}#fountainTextG_1{
+	animation-delay:0.75s;
+		-o-animation-delay:0.75s;
+		-ms-animation-delay:0.75s;
+		-webkit-animation-delay:0.75s;
+		-moz-animation-delay:0.75s;
+}
+#fountainTextG_2{
+	animation-delay:0.9s;
+		-o-animation-delay:0.9s;
+		-ms-animation-delay:0.9s;
+		-webkit-animation-delay:0.9s;
+		-moz-animation-delay:0.9s;
+}
+#fountainTextG_3{
+	animation-delay:1.05s;
+		-o-animation-delay:1.05s;
+		-ms-animation-delay:1.05s;
+		-webkit-animation-delay:1.05s;
+		-moz-animation-delay:1.05s;
+}
+#fountainTextG_4{
+	animation-delay:1.2s;
+		-o-animation-delay:1.2s;
+		-ms-animation-delay:1.2s;
+		-webkit-animation-delay:1.2s;
+		-moz-animation-delay:1.2s;
+}
+#fountainTextG_5{
+	animation-delay:1.35s;
+		-o-animation-delay:1.35s;
+		-ms-animation-delay:1.35s;
+		-webkit-animation-delay:1.35s;
+		-moz-animation-delay:1.35s;
+}
+#fountainTextG_6{
+	animation-delay:1.5s;
+		-o-animation-delay:1.5s;
+		-ms-animation-delay:1.5s;
+		-webkit-animation-delay:1.5s;
+		-moz-animation-delay:1.5s;
+}
+#fountainTextG_7{
+	animation-delay:1.64s;
+		-o-animation-delay:1.64s;
+		-ms-animation-delay:1.64s;
+		-webkit-animation-delay:1.64s;
+		-moz-animation-delay:1.64s;
+}
+#fountainTextG_8{
+	animation-delay:1.64s;
+		-o-animation-delay:1.64s;
+		-ms-animation-delay:1.64s;
+		-webkit-animation-delay:1.64s;
+		-moz-animation-delay:1.64s;
+}
+
+
+
+
+@keyframes bounce_fountainTextG{
+	0%{
+		transform:scale(1);
+		color:rgb(250, 255, 0);
+	}
+
+	100%{
+		transform:scale(.5);
+		color:rgb(250, 255, 0);
+	}
+}
+
+@-o-keyframes bounce_fountainTextG{
+	0%{
+		-o-transform:scale(1);
+		color:rgb(250, 255, 0);
+	}
+
+	100%{
+		-o-transform:scale(.5);
+		color:rgb(255,255,255);
+	}
+}
+
+@-ms-keyframes bounce_fountainTextG{
+	0%{
+		-ms-transform:scale(1);
+		color:rgb(249, 247, 247);
+	}
+
+	100%{
+		-ms-transform:scale(.5);
+		color:rgb(255,255,255);
+	}
+}
+
+@-webkit-keyframes bounce_fountainTextG{
+	0%{
+		-webkit-transform:scale(1);
+		color:rgb(0,0,0);
+	}
+
+	100%{
+		-webkit-transform:scale(.5);
+		color:rgb(255,255,255);
+	}
+}
+
+@-moz-keyframes bounce_fountainTextG{
+	0%{
+		-moz-transform:scale(1);
+		color:rgb(244, 237, 237);
+	}
+
+	100%{
+		-moz-transform:scale(.5);
+		color:rgb(255,255,255);
+	}
+ @-moz-keyframes bounce_fountainTextG{
+	0%{
+		-moz-transform:scale(1);
+		color:rgb(244, 237, 237);
+	}
+
+	100%{
+		-moz-transform:scale(.5);
+		color:rgb(255,255,255);
+	}
+}
+
+        
+    </style>
+  </head>
+  <body>
+    <!-- Start Header -->
+    <div class="header">
+      <div class="container">
+          <img class="logo" src="images/ElMona.png">
+          <div class="links">
+              <span class="icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </span>
+              <ul>
+                  <li><a href="indexx.html">ElMona Doublag </a></li>
+                  <li><a href="music.html">ElMona Voice-Over</a></li>
+                  <li><a href="App.html">Download App</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+          </div>
+      </div>
+   </div>
+    <!-- End Header -->
+
+    <div class="content">
+      <div class="left-col">
+        <h1>Mona ElBhery
+          <br>
+          Voice-Over <br>
+          &<br>
+           Doblag Performance
+        </h1>
+      </div>
+      <div class="right-col">
+        <p>Click Here To Listen (Fathia)</p>
+        <img src="images/playy.png" id="icon">
+      </div>
+
+      
+
+    </div>
+
+    <audio id="mySong">
+
+      <source src="sound/doctor.mp3" type="audio/mp3">
+
+    </audio>
+
+    <div class="music">
+      <i class="fas fa-headset"></i> <a href="Music.html">Listen More</a>
+    </div>
+
+    
+
+      <div class="features">
+        <div class="contain">
+          <div class="feat">
+            <i class="fas fa-video"></i>
+            <h3>ElMona Doublag ( Videos ) </h3>
+            <p>you Will See In This Section <br>Doublag Videos Made by Mona AlBhery</p>
+            <br><br>
+            <a href="indexx.html">Watch Now</a>
+          </div>
+
+          <div class="feat">
+            <i class="fas fa-headset"></i>
+            <h3>ElMona Voice-Over ( Radio ) </h3>
+            <p>you Will See In This Section <br> Voice-Over Made by Mona AlBhery .. </p>
+            <br><br>
+             <a href="Music.html">Listen Now</a>
+          </div>
+
+          <div class="feat">
+            <i class="fab fa-android"></i>
+            <h3>ElMona App (Download) </h3>
+            <p>In This Section , You Can Download<br> Our App , To Wacth My Videos <br>& Listen My Audios </p>
+            <br><br>
+            <a href="app.html">Download Now </a>
+          </div>
+
+        </div>
+      </div>
+
+
+      
+
+    
+
+
+
+
+
+
+
+    <script>
+      var mySong = document.getElementById("mySong");
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function() {
+        if(mySong.paused) {
+          mySong.play();
+          icon.src = "images/pause.png"
+        }else {
+          mySong.pause();
+          icon.src = "images/playy.png"
+        }
+
+        
+      }
+
+    </script>
+
+
+
+
+ 
+
+ 
+  <script src="jquery-3.5.1.min.js"></script>
+    <script src="zoz.js"></script>
+    
+    
+    
+    
+    
+  
+  
+  
+   <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br><br><br><br><br><br>
+  <div id="fountainTextG">
+            <div id="fountainTextG_1" class="fountainTextG">E</div>
+            <div id="fountainTextG_2" class="fountainTextG">l</div>
+            <div id="fountainTextG_3" class="fountainTextG">M</div>
+            <div id="fountainTextG_4" class="fountainTextG">o</div>
+            <div id="fountainTextG_5" class="fountainTextG">n</div>
+            <div id="fountainTextG_6" class="fountainTextG">a</div>
+            <div id="fountainTextG_2" class="fountainTextG">💙</div></div>
+         
+         
+           
+        </div>
+    <br><br><br><br><br>
+
+    <div class="footer">
+      <p class="fo">CopyRight&copy .. <span>Innovation - ElMona .. </span> For Doublag 2021 .. </p>
+    </div>
+    
+    
+    
+    
+  </body>
+</html>

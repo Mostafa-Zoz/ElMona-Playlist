@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Voice-Over player</title>
+     <!-- Bootstrap CSS -->
+    
+    
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+     <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+     
+     <link rel="stylesheet" href="stylee.css"/> 
+ 
+</head>
+
+<body>
+
+  <div class="main">
+  	<p id="logo"><i class="fa fa-music"></i>Music</p>
+    
+    <!--- left part --->
+     <div class="left">
+
+      <!--- song img --->
+      <img id="track_image">
+         <div class="volume">
+            <p id="volume_show">90</p> <br>
+            <i class="fa fa-volume-up" aria-hidden="true" onclick="mute_sound()" id="volume_icon"></i>
+            <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">  
+         </div>
+
+     </div>
+ 
+
+     <!--- right part --->
+  	 <div class="right">
+
+        <div class="show_song_no">
+          <p id="present">1</p>
+          <p>/</p>
+          <p id="total">6</p>
+        </div>
+
+       <!--- song title & artist name --->
+      <p id="title">Doublag</p>
+      <p id="artist">Mona AlBhery</p>
+
+      <!--- middle part --->
+  	 	<div class="middle">
+  	       <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward" aria-hidden="true"></i></button>
+      	   <button onclick="justplay()" id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+  	       <button onclick="next_song()" id="next"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+  	   </div>
+         <br><br><br>
+       <!--- song duration part --->
+        <div class="duration">
+           <input type="range" min="0" max="100" value="0" id="duration_slider" onchange="change_duration()">
+        </div>
+           <button id="auto" onclick="autoplay_switch()">Auto play <i class="fa fa-circle-o-notch" aria-hidden="true"></i></button>
+  	</div>
+
+
+  </div>
+
+
+
+  
+   
+  <!--- Add javascript file --->
+  
+
+  <script src="script.js"></script>
+
+</body>
+</html>
