@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<link rel="icon" type="image/png" href="mic.jpg">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+   
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+
+    <!-- Bootstrap CSS -->
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+     <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="dist/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    
+    <title>ElMona With Group</title>
+    
+    <style>
+      body {
+        background-image: url('images/background.png');
+      }
+        .row {
+ margin: 40px;
+ padding: 0;
+ 
+}
+.featured-work h2 {
+             margin-bottom: 20px;
+            }
+            .featured-work p {
+             line-height: 30px;
+             font-size: 20px;
+            }
+            .featured-work ul{
+             margin-top: 45px;
+            }
+.featured-work ul li {
+ color: #08526d;
+ border: 2px solid #08526d;
+ padding: 15px 10px ;
+ margin-left: 10px;
+ margin-bottom: 10px;
+ cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.featured-work ul li.active{
+ background-color: #ec1c23;
+ color: #FFF;
+ border: 2px solid #FFF;
+}
+.featured-work ul li:hover{
+ background-color: #ec1c23;
+ color: #FFF;
+}
+.featured-work .shuffle-imgs .row {
+  margin: 0;
+}
+ .featured-work .shuffle-imgs .row .col-sm{
+  padding: 0;
+ }
+ .featured-work .row img{
+  width: 100%;
+ }
+ .row .card-texts {
+  color: #FFF;
+  font-weight: bold;
+  font-family: "montserrat",sans-serif;
+  font-size: 24px;
+  line-height: 45px;
+  padding: 15px;
+ }
+ .row button {
+  margin-top: 60px;
+  border: 2px double #FFF;
+ }
+ .row button a{
+  font-weight: bold;
+  color: #FFF;
+  
+ }
+ .row button a:hover{
+  color: #FFF;
+  text-decoration: none;
+ }
+ .row .Follow {
+  margin-left: 300px;
+ }
+ .row .Follow  a{
+  margin-bottom: 20px;
+  margin-left: 30px;
+ }
+ .row .Follow  a:hover{
+  color: #4b4b4b;
+ }
+ .bo {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  transition: 0.5s;
+  
+}
+ .bo:hover {
+ z-index: 1;
+ transform: scale(1.25);
+ box-shadow: 0 25px 40px rgba(0,0,0,.5);
+}
+ .bo .imgbx {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+}
+ .bo .imgbx:before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 1;
+ background: linear-gradient(180deg,#EF6464,#000);
+ mix-blend-mode: multiply;
+ opacity: 0;
+ transition: .5s;
+}
+ .bo:hover .imgbx:before {
+ opacity: 1;
+ 
+}
+ .bo .content {
+ position: absolute;
+ top: -20%;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ z-index: 1;
+ display: flex;
+ padding: 20px;
+ align-items: flex-end;
+ font-family: "Courier New", Courier, monospace;
+}
+ .bo .content h3 {
+ color: #FFF;
+ text-transform: uppercase;
+ transition: 0.5s;
+ margin-bottom: 5px;
+ font-size: 20px;
+ font-weight: bold;
+ font-family: "Courier New", Courier, monospace;
+ transform: translateY(280px);
+}
+.bo:hover .content h3 {
+ transform: translateY(0);
+ transition-delay: 0.6s
+}
+.bo .content p {
+  color: #FFF;
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  transform: translateY(280px);
+  transition: 0.5s;
+  
+}
+.bo:hover .content p {
+ transform: translateY(0);
+ transition-delay: 0.7s
+}
+.bo .content p {
+  color: #FFF;
+  font-size: 14px;
+  transform: translateY(280px);
+  transition: 0.5s;
+  
+}
+.bo:hover .content p {
+ transform: translateY(0);
+ transition-delay: 0.7s
+}
+
+ .bo .content a {
+  color: #333;
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  transform: translateY(280px);
+  transition: 0.5s;
+  
+}
+ .bo:hover .content a {
+  color: #FCFCFC;
+ transform: translateY(0);
+ transition-delay: 0.7s;
+ font-family: "Courier New", Courier, monospace;
+}
+
+.bo .content .social-icons {
+  color: #fff;
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  transform: translateY(280px);
+  transition: 0.6s;
+  
+}
+ .bo:hover .content .social-icons {
+ transform: translateY(0);
+ transition-delay: 0.7s;
+ font-family: "Courier New", Courier, monospace;
+ 
+}
+
+ .bo .imgbx img{
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+h2 {
+    margin-top: 150px;
+    color: #333;
+    text-align: center;
+    font-family: Courier, Monaco, monospace;
+    font-weight: bold;
+    animation: coloring alternate-reverse infinite 4s;
+   }
+   @keyframes coloring {
+    0% {
+      color: #333;
+    }
+    25% {
+      color: #4512A5;
+    }
+    50% {
+      color: #D11D5F;
+    }
+    85% {
+      color: #E51919;
+    }
+   }
+   
+.spf img{
+ width: 60px;
+ height: 60px;
+ background-image: none;
+ font-weight: bold;
+}
+
+    </style>
+    </head>
+    <body>
+        <div class="row">
+         <div class="col-sm-4">
+        <div class="bo">
+         <div class="imgbx">
+          <img src="images/rawy.jpg">
+         </div>
+         <div class="content">
+          <div>
+           <h3>ElMona With Group</h3>
+           <p>الراوي
+           
+           <br>
+           شاهد الأجزاء كاملة الآن 
+           <a href="group.html" class="btn btn-outline-dark btn-lg">Watch Now 💙🔥</a>
+          </div>
+         </div>
+        </div>
+       </div>
+        
+        
+        <div class="col-sm-4">
+        <div class="bo">
+         <div class="imgbx">
+          <img src="images/wedad.jpg">
+         </div>
+         <div class="content">
+          <div>
+           <h3>ElMona With Group</h3>
+           <p> حكايات وداد <br>
+             حكايات تعليمية <br></p>
+                      
+           <a href="wedad.html" class="btn btn-outline-dark btn-lg">Watch Now 💙🔥</a>
+          </div>
+         </div>
+        </div>
+       </div>
+        
+        <div class="col-sm-4">
+        <div class="bo">
+         <div class="imgbx">
+          <img src="venom.jpg">
+         </div>
+         <div class="content">
+          <div>
+           <h3>Arabs Website</h3>
+           <p> Venom Coast 2021 <br>
+               أنتوني جان بوتر كارولين فورد كومبتون وكيلي آن دن مجموعة من الأصدقاء يطاردهم عائلة من القتلة على سفينة كروز خمر  <br></p>
+                       
+           <a href="Venom Coast 2021.html" class="btn btn-outline-dark btn-lg">Watch Now 💙🔥</a>
+          </div>
+         </div>
+        </div>
+       </div>
+    </div>
+        
+  </div>
+    </body>
